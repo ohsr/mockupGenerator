@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Mockup Generator</title>
+        <link href="{{ url_for('static',filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mt-5">
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+</html>

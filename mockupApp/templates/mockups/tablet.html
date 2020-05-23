@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://127.0.0.1:5000/static/css/devices.min.css" rel="stylesheet" >
+    <meta charset="utf-8">
+</head>
+<body class="text-center">
+  <div class="marvel-device ipad silver">
+      <div class="camera"></div>
+      <div class="screen">
+        {% set device = 'tablet' %}
+
+        {% if type == "blog" %}
+            {% include 'mockupApp/templates/mockups/designs/blog.html' %}
+        {% else %}
+            {% include 'mockupApp/templates/mockups/designs/ecommerce.html' %}
+        {% endif %}
+      </div>
+      <div class="home"></div>
+  </div>
+</body>
+</html>
